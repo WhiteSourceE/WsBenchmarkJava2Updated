@@ -19,10 +19,10 @@ public class Continue {
         String accountBalanceQuery = "safe";
 
         for (int i = 1; i <= 5; i++) {
-            if(i < 5) continue;
             accountBalanceQuery = "safe" + req.getParameter("user_id");
+            continue;
         }
-
+        System.out.println("--" + accountBalanceQuery);
         Statement statement = dbConnection.createStatement();
         statement.executeQuery(accountBalanceQuery);
     }
@@ -32,10 +32,10 @@ public class Continue {
         String accountBalanceQuery = "safe";
 
         for (int i = 1; i <= 5; i++) {
-            if(i <= 5) continue;
+            if(true) continue;
             accountBalanceQuery = "safe" + req.getParameter("user_id");
         }
-
+        System.out.println("--" + accountBalanceQuery);
         Statement statement = dbConnection.createStatement();
         statement.executeQuery(accountBalanceQuery);
     }
