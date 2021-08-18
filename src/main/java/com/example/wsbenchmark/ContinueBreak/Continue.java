@@ -22,7 +22,7 @@ public class Continue {
             accountBalanceQuery = "safe" + req.getParameter("user_id");
             continue;
         }
-        System.out.println("--" + accountBalanceQuery);
+
         Statement statement = dbConnection.createStatement();
         statement.executeQuery(accountBalanceQuery);
     }
@@ -35,7 +35,7 @@ public class Continue {
             if(true) continue;
             accountBalanceQuery = "safe" + req.getParameter("user_id");
         }
-        System.out.println("--" + accountBalanceQuery);
+
         Statement statement = dbConnection.createStatement();
         statement.executeQuery(accountBalanceQuery);
     }

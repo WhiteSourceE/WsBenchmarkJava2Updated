@@ -22,7 +22,7 @@ public class Break {
             accountBalanceQuery = "safe" + req.getParameter("user_id");
             break;
         }
-        System.out.println("--" + accountBalanceQuery);
+
         Statement statement = dbConnection.createStatement();
         statement.executeQuery(accountBalanceQuery);
     }
@@ -35,7 +35,7 @@ public class Break {
             if(true) break;
             accountBalanceQuery = "safe" + req.getParameter("user_id");
         }
-        System.out.println("--" + accountBalanceQuery);
+
         Statement statement = dbConnection.createStatement();
         statement.executeQuery(accountBalanceQuery);
     }
