@@ -28,3 +28,4 @@ jobs:
       uses: RIGS-IT/xanitizer-action@v1
       with:
         license: ${{ secrets.XANITIZER_LICENSE }}
+        overviewReportOutputFile: reports/Overview-Report.pdf
